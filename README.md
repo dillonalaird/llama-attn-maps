@@ -22,4 +22,4 @@ Each image will be 32 in length (for the token window) and 33 in height. The col
 
 Below is an example of the attention maps for the propmt "Alice and Bob are siblings. Who is Bob's sister?". You can see it's decoding the `'s` after `Bob` and is attending to the 45th column which corresponds to the token `sister` in the input. The highest attended tokens are close to the token `hood` in the output space.
 
-[![Attention Maps](https://github.com/dillonalaird/llama-attn-maps/blob/main/assets/attn_17_8.png)
+[Attention Maps](https://github.com/dillonalaird/llama-attn-maps/blob/main/assets/attn_17_8.png)
