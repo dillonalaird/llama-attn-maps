@@ -15,6 +15,7 @@ You can run the script with the following command:
 ```bash
 python run.py --prompt "Hello!" --model_path "path/to/model" --tokenizer_path "path/to/tokenizer" --output_dir "path/to/saved/attention_maps"
 ```
+It uses accelerate with bitsandbytes to run the model with 8 bit precision.
 
 It will save the attention maps in the `output_dir`. The files are specified `attn_{i}_{j}.png` where `i` is the current token it's predicting. Since the attention maps are very larged they are divided up into windows of size 32 (so you are looking at attention over 32 tokens) and they move in increments of 5, the `j` represents the increment number. So for example if you are looking at the 10th predicted token and the input sequence was 32 (so there are 42 total tokens), then `attn_10_0.png` will be 0 to 32, `attn_10_1.png` will be 5 to 37, `attn_10_2.png` will be 10 to 42, etc.
 
