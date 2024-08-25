@@ -6,7 +6,7 @@ You can install the requirements with the following command:
 ```bash
 pip install -r requirements.txt
 ```
-You'll need to download the Llama 3.1 model weights as well as the tokenizer which can be found at [llama](https://github.com/meta-llama/llama-models/tree/main).
+and requires python Python >= 3.10. You'll need to download the Llama 3.1 model weights as well as the tokenizer which can be found at [llama](https://github.com/meta-llama/llama-models/tree/main).
 
 
 ## Usage and Explanation
